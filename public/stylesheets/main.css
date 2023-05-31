@@ -1,0 +1,14 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control, .btn {
+    box-shadow: none !important;
+    border-color: #dee2e6 !important;
+    outline: none !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none !important;
+    background: none !important;
+  }
