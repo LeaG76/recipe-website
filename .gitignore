@@ -1,5 +1,8 @@
 # Node modules
 node_modules/
 
+# Private .env
+.env
+
 postcss.config.js
 tailwind.config.js
