@@ -1,0 +1,47 @@
+[
+    {
+    "name": "Salades",
+    "image": "salad.jpg",
+    "code": "salads"
+},
+{
+    "name": "Pains",
+    "image": "bread.jpg",
+    "code": "bread"
+},
+{
+    "name": "Pâtisseries",
+    "image": "pastry.jpg",
+    "code": "pastry"
+},
+{
+    "name": "Noël",
+    "image": "christmas.jpg",
+    "code": "christmas"
+},
+{
+    "name": "Apéritifs",
+    "image": "appetizer.jpg",
+    "code": "appetizer"
+},
+{
+    "name": "Plats",
+    "image": "meal.jpg",
+    "code": "meals"
+},
+{
+    "name": "Soupes",
+    "image": "soups.jpg",
+    "code": "soups"
+},
+{
+    "name": "Tartines",
+    "image": "toast.jpg",
+    "code": "toasts"
+},
+{
+    "name": "Desserts",
+    "image": "desserts.jpg",
+    "code": "desserts"
+}
+]

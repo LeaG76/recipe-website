@@ -9,6 +9,10 @@ const categorySchema = new mongoose.Schema({
         type: String,
         required: 'This field is required.'
     },
+    code: {
+        type: String,
+        required: 'This field is required.'
+    }
 });
 
 module.exports = mongoose.model('Category', categorySchema);
