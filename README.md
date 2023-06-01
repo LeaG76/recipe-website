@@ -24,6 +24,7 @@
 
 ## Todo list
 
+- Start first with the design mobile version then tablet version then computer version
 - Header + navbar
 - Do the homepage
 - Responsive (header + home page (above all the picture))
