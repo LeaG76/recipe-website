@@ -10,9 +10,15 @@
     --color-green-light: #749929;
 }
 
-body {
-    font-family: 'Poppins', sans-serif !important;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: var(--color-white) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
     min-height: 100vh;
 }
 
@@ -51,3 +57,18 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none !important;
     background: none !important;
   }
+
+/* Remove the autofill background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Taille ordinateur */
+@media screen and (min-width: 1200px) {
+}
+
+/* Taille tablette */
+@media screen and (max-width: 1200px) {
+}
