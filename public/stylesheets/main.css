@@ -19,13 +19,23 @@
 }
 
 body {
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
-    position: absolute;
+    position: relative;
     width: 100%;
+    z-index: 3;
+}
+
+footer {
+    position: relative;
+}
+
+.main {
+    position: relative;
     z-index: 2;
+    min-height: calc(100vh - 76px);
 }
 
 #title {
@@ -34,10 +44,9 @@ header {
 }
 
 .picture-homepage {
-    position: relative;
-    height: 100vh;
+    position: absolute;
+    min-height: calc(100vh - 76px);
     width: 100%;
-    z-index: 1;
 }
 
 .picture-homepage img {
@@ -45,6 +54,7 @@ header {
     bottom: 0;
     right: 0;
     width: 50%;
+    z-index: 4;
 }
 
 .form-control, .btn {

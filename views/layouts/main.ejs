@@ -19,12 +19,12 @@
         <%= typeof title != 'undefined' ? title: 'Recipe Website - Made with Node.js' %>
     </title>
     
-    <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Geologica:wght@500&family=Poppins&family=Rancho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="shadow">
@@ -69,9 +69,6 @@
         </div>
       </nav>
     </header>
-    <section class="picture-homepage">
-        <img src="/pictures/home_picture.png" alt="pizza">
-    </section>
     
     <!--<nav class="navbar navbar-expand-md rounded" aria-label="Thirteenth navbar example">
         <div class="container-fluid">
@@ -121,11 +118,21 @@
             <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
         </form>
 
-    </header>
+    </header>-->
 
     <main>
         <%- body -%>
-    </main>-->
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center px-5 py-3 position-relative border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
