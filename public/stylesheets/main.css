@@ -1,5 +1,44 @@
+:root {
+    /* Pallet color */
+    --color-black: #0F0F0F;
+    --color-gray: #ABA89F;
+    --color-white: #F5F2F0;
+    --color-brown: #664932;
+    --color-beige: #D1AC7F;
+    --color-red: #8D2300;
+    --color-green: #314A10;
+    --color-green-light: #749929;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--color-white) !important;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#title {
+    /*font-family: 'Geologica', cursive !important;*/
+    font-size: 24px;
+}
+
+.picture-homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.picture-homepage img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
 }
 
 .form-control, .btn {

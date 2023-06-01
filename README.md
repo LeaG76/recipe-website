@@ -21,3 +21,12 @@
 </p>
 
 ## About
+
+## Todo list
+
+- Header + navbar
+- Do the homepage
+- Responsive (header + home page (above all the picture))
+- Footer
+- Create style.css file to fix default value of boostrap and set default colors, size, font, weight, margin, padding, ...
+- Create index css file
