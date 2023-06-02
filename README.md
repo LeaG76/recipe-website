@@ -102,3 +102,4 @@
 - Footer
 - Create style.css file to fix default value of boostrap and set default colors, size, font, weight, margin, padding, ...
 - Create index css file
+- Le background-color white pour tous c'est peut être ça le problème pour l'image car elle a un fond blanc qui va par dessus le texte p
