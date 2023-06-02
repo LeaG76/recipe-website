@@ -26,8 +26,7 @@
 
 **Categories**:
 
-- [ ] Create recipe categories with an image
-    - Examples: breakfast, meals, salads, sandwiches
+- [ ] Create recipe categories with an image (examples: breakfast, meals, salads, sandwiches, ...)
 - [ ] Edit recipe categories
 - [ ] Show all recipe categories
 - [ ] Show the detail of each category
@@ -35,6 +34,15 @@
 **Recipes**:
 
 - [ ] Create cooking recipes with all this information:
+
+| <!-- -->    | <!-- -->    | <!-- -->    |
+|-------------|-------------|-------------|
+| Name and description | Source link (from a website, youtube video) | Category |
+| One or more photos | A list of ingredients | A list of instructions |
+| A list of materials (tools) | A list of tags | Total time |
+| Preparation time | Cooking time | Level (beginner, intermediate, advanced) |
+| Number of persons | And if the recipe is in favorites or not | |
+
     - Name and description
     - Source link (from a website, youtube video)
     - Category
@@ -42,7 +50,7 @@
     - A list of ingredients
     - A list of instructions
     - A list of materials (tools)
-    - A list of tags ()
+    - A list of tags
     - Total time
     - Preparation time
     - Cooking time
