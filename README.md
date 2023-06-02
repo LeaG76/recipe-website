@@ -36,13 +36,11 @@
 - [ ] Create cooking recipes with all this information:
 
 <table align="center">
-    <!-- Table header -->
-    <!-- Table body -->
     <tbody>
         <tr>
-            <td align="center">Name and description</td>
-            <td align="center">Source link (from a website, youtube video)</td>
-            <td align="center">Category</td>
+            <td align="center" width="500px">Name and description</td>
+            <td align="center" width="500px">Source link (from a website, youtube video)</td>
+            <td align="center" width="500px">Category</td>
         </tr>
         <tr>
             <td align="center">One or more photos</td>
