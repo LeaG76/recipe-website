@@ -35,13 +35,44 @@
 
 - [ ] Create cooking recipes with all this information:
 
-| <!-- -->    | <!-- -->    | <!-- -->    |
-|-------------|-------------|-------------|
-| Name and description | Source link (from a website, youtube video) | Category |
-| One or more photos | A list of ingredients | A list of instructions |
-| A list of materials (tools) | A list of tags | Total time |
-| Preparation time | Cooking time | Level (beginner, intermediate, advanced) |
-| Number of persons | And if the recipe is in favorites or not | |
+<table align="center">
+    <!-- Table header -->
+    <thead>
+        <tr>
+            <th width="500px"></th>
+            <th width="500px"></th>
+            <th width="500px"></th>
+        </tr>
+    </thead>
+    <!-- Table body -->
+    <tbody>
+        <tr>
+            <td align="center">Name and description</td>
+            <td align="center">Source link (from a website, youtube video)</td>
+            <td align="center">Category</td>
+        </tr>
+        <tr>
+            <td align="center">One or more photos</td>
+            <td align="center">A list of ingredients</td>
+            <td align="center">A list of instructions</td>
+        </tr>
+        <tr>
+            <td align="center">A list of materials (tools)</td>
+            <td align="center">A list of tags</td>
+            <td align="center">Total time</td>
+        </tr>
+        <tr>
+            <td align="center">Preparation time</td>
+            <td align="center">Cooking time</td>
+            <td align="center">Level (beginner, intermediate, advanced)</td>
+        </tr>
+        <tr>
+            <td align="center">Number of persons</td>
+            <td align="center">And if the recipe is in favorites or not</td>
+            <td align="center"></td>
+        </tr>
+    </tbody>
+</table>
 
     - Name and description
     - Source link (from a website, youtube video)
