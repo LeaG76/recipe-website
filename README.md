@@ -22,6 +22,61 @@
 
 ## About
 
+### Functionalities
+
+**Categories**:
+
+- [ ] Create recipe categories with an image
+    - Examples: breakfast, meals, salads, sandwiches
+- [ ] Edit recipe categories
+- [ ] Show all recipe categories
+- [ ] Show the detail of each category
+
+**Recipes**:
+
+- [ ] Create cooking recipes with all this information:
+    - Name and description
+    - Source link (from a website, youtube video)
+    - Category
+    - One or more photos
+    - A list of ingredients
+    - A list of instructions
+    - A list of materials (tools)
+    - A list of tags ()
+    - Total time
+    - Preparation time
+    - Cooking time
+    - Level (beginner, intermediate, advanced)
+    - Number of persons
+    - And if the recipe is in favorites or not
+- [ ] Edit cooking recipes
+- [ ] Delete cooking recipes
+- [ ] Show recipes in alphabetical order
+- [ ] Show the latest recipes
+- [ ] Show recipes by category
+- [ ] Show a random recipe
+- [ ] Show favorite recipes
+
+**Other**:
+
+- [ ] Recipe name search
+- [ ] Menu of the week
+- [ ] Shopping list according to the ingredients of the chosen recipes
+
+### Technologies / Tools
+
+**Back**
+
+- Node.js
+- Express
+- MongoDB
+
+**Front**
+
+- EJS files
+- Framework Boostrap
+- Fontawesome
+
 ## Todo list
 
 - Start first with the design mobile version then tablet version then computer version
