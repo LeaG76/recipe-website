@@ -103,3 +103,7 @@
 - Create style.css file to fix default value of boostrap and set default colors, size, font, weight, margin, padding, ...
 - Create index css file
 - Le background-color white pour tous c'est peut être ça le problème pour l'image car elle a un fond blanc qui va par dessus le texte p
+- Ajout message type alert quand on a bien créé/modifié une recette/catégorie
+- Message type modal si on veut supprimer une recette ?
+- Alerte en bas/en haut lorsqu'on a bien supoprimé une recette ?
+- Alerte si ajout dans le menu ou dans la liste de courses ?
