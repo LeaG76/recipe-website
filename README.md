@@ -65,20 +65,6 @@
     </tbody>
 </table>
 
-    - Name and description
-    - Source link (from a website, youtube video)
-    - Category
-    - One or more photos
-    - A list of ingredients
-    - A list of instructions
-    - A list of materials (tools)
-    - A list of tags
-    - Total time
-    - Preparation time
-    - Cooking time
-    - Level (beginner, intermediate, advanced)
-    - Number of persons
-    - And if the recipe is in favorites or not
 - [ ] Edit cooking recipes
 - [ ] Delete cooking recipes
 - [ ] Show recipes in alphabetical order
