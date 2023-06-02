@@ -37,13 +37,6 @@
 
 <table align="center">
     <!-- Table header -->
-    <thead>
-        <tr>
-            <th width="500px"></th>
-            <th width="500px"></th>
-            <th width="500px"></th>
-        </tr>
-    </thead>
     <!-- Table body -->
     <tbody>
         <tr>
