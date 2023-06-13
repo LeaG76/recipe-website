@@ -1,0 +1,17 @@
+/* Google Fonts */
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');*/
+
+/* Variables */
+
+:root {
+    /* Pallet color */
+    --color-black: #0F0F0F;
+    --color-gray: #707070;
+    --color-gray-light: #E3E3E3;
+    --color-white: #F5F2F0;
+    --color-brown: #664932;
+    --color-beige: #D1AC7F;
+    --color-red: #8D2300;
+    --color-green: #314A10;
+    --color-green-light: #749929;
+}

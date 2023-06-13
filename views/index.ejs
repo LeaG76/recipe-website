@@ -31,24 +31,6 @@
     <div class="title-container">
         Catégories</div>
     <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4 mx-5">
-        <!--<div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>-->
-
-        <% if(categories != "") { %>
-            <% categories.forEach(function(category, index) { %>
-                <a href="/categories/<%- category.code %>" class="col text-center category-link">
-                    <div class="category-img shadow">
-                        <img src="pictures/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
-                    </div>
-                    <div class="pt-1"><%- category.name %></div>
-                </a>
-            <% }); %>
-        <% } %>
-
         <a href="#" class="col text-center category-link">
             <div class="category-img shadow">
                 <img src="pictures/categories/salad.jpg" alt="Salades" loading="lazy">

@@ -1,17 +1,3 @@
-/* Set all variables */
-
-:root {
-    /* Pallet color */
-    --color-black: #0F0F0F;
-    --color-gray: #ABA89F;
-    --color-white: #F5F2F0;
-    --color-brown: #664932;
-    --color-beige: #D1AC7F;
-    --color-red: #8D2300;
-    --color-green: #314A10;
-    --color-green-light: #749929;
-}
-
 /* Default parameters */
 
 * {
@@ -23,9 +9,9 @@
 /* Body */
 
 body {
-    font-family: 'Poppins', sans-serif !important;
-    color: var(--color-black) !important;
-    background-color: var(--color-white) !important;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
     max-width: 100vw;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -37,13 +23,54 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* Header and footer */
+/* Header and navbar */
 
 header {
-    position: relative;
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     z-index: 3;
+    transition: all 0.5s ease;
 }
+
+.navigation {
+    margin: 0 3rem;
+    padding: 0.5rem 0;
+}
+
+.navigation-desktop-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navigation-item {
+    padding: 0 1rem;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+.navigation-link:hover {
+    color: var(--color-black);
+}
+
+.active {
+    color: var(--color-black);
+}
+
+/* Footer */
 
 footer {
     position: relative;

@@ -1,5 +1,5 @@
-require('../models/database');
-const Category = require('../models/Category');
+//require('../models/database');
+//const Category = require('../models/Category');
 
 /**
  * GET /
@@ -8,14 +8,14 @@ const Category = require('../models/Category');
 exports.homepage = async(req, res) => {
     try {
         const limitNumber = 5;
-        const categories = await Category.find({}).limit(limitNumber);
-        res.render('index', {title: "Recipe Website - Homepage", categories});
+        //const categories = await Category.find({}).limit(limitNumber);
+        res.render('index', {title: "Recipe Website - Homepage", currentPage: "home"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
 }
 
-async function insertCategoryData() {
+/*async function insertCategoryData() {
     try {
         await Category.insertMany([
             {
@@ -67,6 +67,6 @@ async function insertCategoryData() {
     } catch(error) {
         console.log('err', + error);
     }
-}
+}*/
 
 //insertCategoryData();
