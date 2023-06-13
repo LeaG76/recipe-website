@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 header {
     position: relative;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 footer {
@@ -51,9 +51,56 @@ footer {
 
 /* Home page */
 
+.background-container {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 76px);
+    width: 100%;
+}
+
+.background-container img {
+    position: absolute;
+}
+
+.background-container .basilic1 {
+    top: 30%;
+    left: 25%;
+    width: 45%;
+}
+
+.background-container .basilic2 {
+    top: -25%;
+    left: -5%;
+    width: 35%;
+}
+
+.background-container .champignon1 {
+    top: 50%;
+    left: 15%;
+}
+
+.background-container .persil1 {
+    top: 3%;
+    left: 15%;
+}
+
+.background-container .poivre1 {
+    top: 35%;
+    left: 20%;
+}
+
+.background-container .tomato1 {
+    top: 60%;
+    left: 5%;
+}
+
+.background-container .tomato2 {
+    left: 35%;
+}
+
 .main-container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     min-height: calc(100vh - 76px);
 }
 
@@ -83,7 +130,7 @@ footer {
     bottom: 0;
     right: 0;
     width: 56%;
-    z-index: 3;
+    z-index: 4;
 }
 
 /* Category cards */
