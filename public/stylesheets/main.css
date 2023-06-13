@@ -77,6 +77,7 @@ header {
     text-decoration: none;
     color: var(--color-gray);
     white-space: nowrap;
+    border-bottom: 1.5px solid var(--color-black);
 }
 
 .navigation-item:hover .navigation-link {
@@ -129,15 +130,9 @@ header {
 .show-dropdown-menu {
     display: block;
 }
-.navigation-item:hover .navigation-submenu {
-}
 
 .rotate-chevron {
     transform: rotate(180deg);
-}
-
-.navigation-item:hover .navigation-arrow {
-   
 }
 
 .active {

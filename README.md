@@ -97,6 +97,7 @@
 
 - suivre le tuto comme le cv generator en faisant d'abord la version mobile puis la version desktop/latptop/tablet avec une classe
 - aligner les items dans le sub menu
+- effect border bottom on hover
 - Start first with the design mobile version then tablet version then computer version
 - Header + navbar
 - Do the homepage
