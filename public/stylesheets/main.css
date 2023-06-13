@@ -36,7 +36,7 @@ header {
 }
 
 .navigation {
-    margin: 0 3rem;
+    margin: 0 3.5rem;
     padding: 0.5rem 0;
 }
 
@@ -44,6 +44,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navigation-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 0.3125rem 0;
+    margin-left: 1rem;
+}
+
+.navigation-logo img {
+    margin-right: 1rem;
 }
 
 .navigation-menu {
@@ -60,10 +76,68 @@ header {
 .navigation-link {
     text-decoration: none;
     color: var(--color-gray);
+    white-space: nowrap;
 }
 
-.navigation-link:hover {
+.navigation-item:hover .navigation-link {
     color: var(--color-black);
+}
+
+.navigation-arrow {
+    color: var(--color-black);
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.navigation-submenu {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--color-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    list-style-type: none;
+    line-height: 30px;
+    padding: 10px;
+    display: none;
+    transition: 1s;
+}
+
+.navigation-subitem {
+    padding: 0 5px;
+}
+
+.navigation-subitem i {
+    padding-right: 10px;
+}
+
+.navigation-sublink {
+    text-decoration: none;
+    color: var(--color-gray);
+    white-space: nowrap;
+}
+
+.navigation-subitem:hover .navigation-sublink {
+    color: var(--color-black);
+}
+
+.show-dropdown-menu {
+    display: block;
+}
+.navigation-item:hover .navigation-submenu {
+}
+
+.rotate-chevron {
+    transform: rotate(180deg);
+}
+
+.navigation-item:hover .navigation-arrow {
+   
 }
 
 .active {
