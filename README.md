@@ -95,6 +95,10 @@
 
 ## Todo list
 
+- a faire en premier :
+    - terminer la nav bar (form search version ordi/tablet et version mobile, croix pour fermer la recherche)
+    - https://youtu.be/u7_ooIhAnKU
+
 - suivre le tuto comme le cv generator en faisant d'abord la version mobile puis la version desktop/latptop/tablet avec une classe
 - aligner les items dans le sub menu
 - effect border bottom on hover

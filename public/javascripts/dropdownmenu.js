@@ -1,4 +1,4 @@
-const showMenu = (toggleId, menuId) => {
+const showSubMenu = (toggleId, menuId) => {
     const toggle = document.getElementById(toggleId);
     const menu = document.getElementById(menuId);
     if (toggle && menu) {
@@ -9,4 +9,4 @@ const showMenu = (toggleId, menuId) => {
     }
 }
 
-showMenu('recipesToogle', 'recipesSubMenu');
+showSubMenu('recipesToogle', 'recipesSubMenu');

@@ -31,7 +31,7 @@
     
     <!-- IMPORT STYLESHEETS IN CSS3-->
     <link rel="stylesheet" href="/stylesheets/layout.css">
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
     <!-- BOOSTRAP-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
@@ -39,54 +39,55 @@
 <body>
     <header id="header">
       <nav class="navigation">
-        <!-- <div class="navigation-mobile-container">
-          <a class="nav_logo" href="/">
-            <img src="/pictures/logo.png" style="height:50px;" alt="Recipe Website -Made with Node.js">
-            Petits Plats
-          </a>
-        </div> -->
-        <div class="navigation-desktop-container">
-          <a class="navigation-logo" href="/">
-            <img src="/pictures/logo.png" style="height:50px;" alt="Recipe Website -Made with Node.js">
-            Petits Plats
-          </a>
-          <ul class="navigation-menu">
-            <li class="navigation-item">
-              <a
-                <% if (currentPage === 'home') { %>
-                  class="navigation-link active" href="/"
-                  <%} else { %>
-                  class="navigation-link" href="/"
-                  <% } %> >
-              Accueil</a>
-            </li>
-            <li class="navigation-item">
-              <a
-                <% if (currentPage === 'about') { %>
-                  class="navigation-link active" href="/about"
-                  <%} else { %>
-                  class="navigation-link" href="/about"
-                  <% } %> >
-              À propos</a>
-            </li>
-            <li class="navigation-item"><a class="navigation-link" href="/recipes">Recettes</a>
-              <i id="recipesToogle" class="fa-solid fa-chevron-down navigation-arrow"></i>
-              <ul id="recipesSubMenu" class="navigation-submenu">
-                <li class="navigation-subitem"><a class="navigation-sublink" href="/recipes"><i class="fa-solid fa-arrow-down-a-z"></i>Toutes les recettes</a></li>
-                <li class="navigation-subitem"><a class="navigation-sublink" href="/latest"><i class="fa-solid fa-clock"></i>Dernières recettes</a></li>
-                <li class="navigation-subitem"><a class="navigation-sublink" href="/category"><i class="fa-solid fa-tag"></i>Catégories</a></li>
-                <li class="navigation-subitem"><a class="navigation-sublink" href="/newrecipe"><i class="fa-solid fa-circle-plus"></i>Nouvelle recette</a></li>
-                <li class="navigation-subitem"><a class="navigation-sublink" href="/favorites"><i class="fa-solid fa-heart"></i>Favoris</a></li>
-              </ul>
-            </li>
-            <li class="navigation-item"><a class="navigation-link px-3" aria-current="page" href="/menu">Menu</a></li>
-            <li class="navigation-item"><a class="navigation-link px-3" aria-current="page" href="/shoppinglist">Liste de courses</a></li>
-          </ul>
-          <form class="d-flex input-group" method="POST" action="/search">
-            <input class="form-control form-control-sm mr-3 w-75" type="search" name="searchTerm" placeholder="Recherche ..." aria-label="Search">
-            <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
-          </form>
+        <div id="menuToogle" class="navigation-toggle-icon">
+          <span class="fas fa-bars"></span>
         </div>
+        <a class="navigation-logo" href="/">
+          <img src="/pictures/logo.png" alt="Recipe Website -Made with Node.js">
+          <span>PaléoDélices</span>
+        </a>
+        <ul id="navigationMenu" class="navigation-menu">
+          <li class="navigation-item">
+            <a
+              <% if (currentPage === 'home') { %>
+                class="navigation-link active" href="/"
+                <%} else { %>
+                class="navigation-link" href="/"
+                <% } %> >
+            Accueil</a>
+          </li>
+          <li class="navigation-item">
+            <a
+              <% if (currentPage === 'about') { %>
+                class="navigation-link active" href="/about"
+                <%} else { %>
+                class="navigation-link" href="/about"
+                <% } %> >
+            À propos</a>
+          </li>
+          <li class="navigation-item"><a class="navigation-link" href="/recipes">Recettes</a>
+            <i id="recipesToogle" class="fa-solid fa-chevron-down navigation-arrow"></i>
+            <ul id="recipesSubMenu" class="navigation-submenu">
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/recipes"><i class="fa-solid fa-arrow-down-a-z"></i>Toutes les recettes</a></li>
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/latest"><i class="fa-solid fa-clock"></i>Dernières recettes</a></li>
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/category"><i class="fa-solid fa-tag"></i>Catégories</a></li>
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/newrecipe"><i class="fa-solid fa-circle-plus"></i>Nouvelle recette</a></li>
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/favorites"><i class="fa-solid fa-heart"></i>Favoris</a></li>
+            </ul>
+          </li>
+          <li class="navigation-item"><a class="navigation-link" href="/menu">Menu</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="/shoppinglist">Liste de courses</a></li>
+        </ul>
+        <div class="navigation-search-icon">
+          <span class="fas fa-search"></span>
+        </div>
+        <div class="navigation-cancel-icon">
+          <span class="fas fa-times"></span>
+        </div>
+        <form method="POST" action="/search" class="navigation-form">
+          <input type="search" class="navigation-search-data" name="searchData" placeholder="Recherche ..." required>
+          <button type="submit" class="fas fa-search"></button>
+        </form>
       </nav>
       <!--<nav class="navbar navbar-expand-lg mx-5" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
@@ -142,5 +143,6 @@
     
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>-->
     <script src="javascripts/dropdownmenu.js"></script>
+    <script src="javascripts/navbartoggle.js"></script>
   </body>
 </html>
