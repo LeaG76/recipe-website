@@ -144,7 +144,7 @@ header {
 }
 
 .show-menu {
-    display: block;
+    display: flex;
 }
 
 .show-dropdown-menu {
