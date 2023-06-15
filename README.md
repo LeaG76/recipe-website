@@ -96,7 +96,7 @@
 ## Todo list
 
 - a faire en premier :
-    - terminer la nav bar (form search version ordi/tablet et version mobile, croix pour fermer la recherche)
+    - ajouter footer dans navbar en bah (nom du site, source + icon github, codepen)
     - https://youtu.be/u7_ooIhAnKU
 
 - suivre le tuto comme le cv generator en faisant d'abord la version mobile puis la version desktop/latptop/tablet avec une classe
