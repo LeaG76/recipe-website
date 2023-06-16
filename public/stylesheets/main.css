@@ -308,7 +308,16 @@ footer {
 
 .footer-list-item {
     list-style: none;
+}
+
+.footer-list-link {
     font-size: 16px;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.footer-list-link:hover {
+    color: var(--color-red);
 }
 
 .footer-bottom {
