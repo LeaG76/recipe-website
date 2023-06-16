@@ -252,11 +252,23 @@ footer {
 
 .footer-top-left {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top-left-top {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 3em;
     width: 35%;
+}
+
+.footer-top-left-bottom {
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 .footer-name {
