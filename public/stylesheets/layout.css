@@ -14,4 +14,8 @@
     --color-red: #8D2300;
     --color-green: #314A10;
     --color-green-light: #749929;
+
+    /* Border radius */
+    --border-radius-1 : 0.5rem;
+    --border-radius-2 : 0.25rem;
 }
