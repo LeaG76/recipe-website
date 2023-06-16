@@ -70,7 +70,7 @@ header {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 
 .navigation-item {
@@ -113,7 +113,8 @@ header {
     line-height: 30px;
     padding: 10px;
     transition: 0.5s;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .navigation-subitem {
@@ -143,12 +144,9 @@ header {
     color: var(--color-red);
 }
 
-.show-menu {
-    display: flex;
-}
-
 .show-dropdown-menu {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .rotate-toggle-menu {
@@ -292,7 +290,9 @@ header {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
         padding: 10px;
         text-align: left;
-        display: none;
+        display: inline-block;
+        opacity: 0;
+        pointer-events: none;
     }
 
     .navigation-item {
@@ -323,7 +323,8 @@ header {
     }
 
     .show-menu {
-        display: inline-block;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .show-dropdown-menu {
@@ -354,8 +355,11 @@ header {
 
     .navigation-form {
         position: absolute;
-        top: -100px;
+        top: 98px;
         right: 1rem;
+        opacity : 0;
+        pointer-events: none;
+        transition: all 0.5s ease;
     }
 
     .navigation-form::before {
@@ -391,7 +395,8 @@ header {
     }
 
     .show-search-form {
-        top: 98px;
+        opacity : 1;
+        pointer-events: auto;
     }
 
     .show-icon {
