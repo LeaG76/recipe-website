@@ -95,21 +95,14 @@
 
 ## Todo list
 
-- a faire en premier :
-    - ajouter footer dans navbar en bah (nom du site, source + icon github, codepen)
-    - https://youtu.be/u7_ooIhAnKU
+A faire en premier :
+- adapter le footer au format tablet et mobile
 
-- suivre le tuto comme le cv generator en faisant d'abord la version mobile puis la version desktop/latptop/tablet avec une classe
-- aligner les items dans le sub menu
-- effect border bottom on hover
-- Start first with the design mobile version then tablet version then computer version
-- Header + navbar
+Ensuite :
 - Do the homepage
-- Responsive (header + home page (above all the picture))
-- Footer
-- Create style.css file to fix default value of boostrap and set default colors, size, font, weight, margin, padding, ...
-- Create index css file
-- Le background-color white pour tous c'est peut être ça le problème pour l'image car elle a un fond blanc qui va par dessus le texte p
+
+Idées :
+
 - Ajout message type alert quand on a bien créé/modifié une recette/catégorie
 - Message type modal si on veut supprimer une recette ?
 - Alerte en bas/en haut lorsqu'on a bien supoprimé une recette ?
