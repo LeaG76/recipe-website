@@ -78,6 +78,10 @@ header {
     padding: 0 0.85rem;
 }
 
+.navigation-social {
+    display: none;
+}
+
 .navigation-link {
     font-size: 18px;
     text-decoration: none;
@@ -479,6 +483,17 @@ footer {
         line-height: 35px;
     }
 
+    .navigation-social {
+        display: block;
+        text-align: right;
+    }
+
+    .navigation-social-icon {
+        color: var(--color-black);
+        font-size: 24px;
+        margin-left: 0.5em;
+    }
+
     .navigation-link,
     .navigation-sublink {
         font-size: 20px;
@@ -681,6 +696,10 @@ footer {
     .navigation-link,
     .navigation-sublink {
         font-size: 18px;
+    }
+
+    .navigation-social-icon {
+        font-size: 22px;
     }
 
     .navigation-arrow {
