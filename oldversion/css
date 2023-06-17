@@ -1,0 +1,229 @@
+/* Set all variables */
+
+:root {
+    /* Pallet color */
+    --color-black: #0F0F0F;
+    --color-gray: #8F8D89;
+    --color-white: #F5F2F0;
+    --color-brown: #664932;
+    --color-beige: #D1AC7F;
+    --color-red: #8D2300;
+    --color-green: #314A10;
+    --color-green-light: #749929;
+}
+
+/* Default parameters */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--color-black) !important;
+    background-color: var(--color-white) !important;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header and footer */
+
+header {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+footer {
+    position: relative;
+}
+
+/* Home page */
+
+.main-container {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 76px);
+}
+
+/* Titles */
+
+.title-container {
+    background-color: var(--color-red)!important;
+    text-align: center ;
+    color: var(--color-white);
+    margin: 0 500px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+/* Picture from the home page */
+
+.picture-homepage {
+    position: absolute;
+    min-height: calc(100vh - 76px);
+    width: 100%;
+}
+
+.picture-homepage img {
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+    right: 0;
+    width: 56%;
+    z-index: 3;
+}
+
+/* Category cards */
+
+.categories-container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-container {
+    max-width: 1300px;
+    width: 100%;
+}
+
+.slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.category-card {
+    width: 312px!important;
+    background-color: #FFF;
+    border-radius: 8px;
+}
+
+.category-card .picture-box {
+    height: 200px;
+}
+
+.category-card .picture-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.category-card .details-box {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+    padding: 10px 14px 2px 14px;
+}
+
+.category-card .details-box .name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.category-card .details-box .description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.swiper-button-next {
+    right: 10%!important;
+}
+
+.swiper-button-prev {
+    left: 10%!important;
+}
+
+.swiper-pagination {
+    top: 15%!important;
+}
+
+.swiper-navBtn {
+    color: #000!important;
+    height: 40px!important;
+    width: 40px!important;
+    background: #fff!important;
+    border-radius: 50%!important;
+    top: 145%!important;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px!important;
+  }
+  .swiper-pagination-bullet {
+    background-color: #000!important;
+  }
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none!important;
+    }
+  }
+
+.category-link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+}
+
+.category-link:hover {
+    transform: scale(1.1);
+}
+
+.category-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.category-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Fix Boostrap default parameters */
+
+.form-control, .btn {
+    box-shadow: none !important;
+    border-color: #dee2e6 !important;
+    outline: none !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none !important;
+    background: none !important;
+}
+
+/* Remove the autofill background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Taille ordinateur */
+@media screen and (min-width: 1200px) {
+}
+
+/* Taille tablette */
+@media screen and (max-width: 1200px) {
+}
