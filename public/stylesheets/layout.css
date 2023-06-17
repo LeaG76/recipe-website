@@ -15,6 +15,17 @@
     --color-green: #314A10;
     --color-green-light: #749929;
 
+    /* Font size */
+    --font-size-60: 60px;
+    --font-size-30: 30px;
+    --font-size-18: 18px;
+    --font-size-17: 17px;
+    --font-size-16: 16px;
+
+    /* Line height */
+    --line-height-35: 35px;
+    --line-height-30: 30px;
+
     /* Border radius */
     --border-radius-1 : 0.5rem;
     --border-radius-2 : 0.25rem;
