@@ -95,11 +95,11 @@
 
 ## Todo list
 
-A faire en premier :
-- adapter le footer au format tablet et mobile
-
 Ensuite :
 - Do the homepage
+- Page catégories
+- Page recettes
+- Log in et gestion des affichages en fonction utilisateurs
 
 Idées :
 
