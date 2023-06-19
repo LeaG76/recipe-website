@@ -73,7 +73,7 @@
             <ul id="recipesSubMenu" class="navigation-submenu">
               <li class="navigation-subitem"><a class="navigation-sublink" href="/recipes"><i class="fa-solid fa-arrow-down-a-z"></i>Toutes les recettes</a></li>
               <li class="navigation-subitem"><a class="navigation-sublink" href="/latest"><i class="fa-solid fa-clock"></i>Dernières recettes</a></li>
-              <li class="navigation-subitem"><a class="navigation-sublink" href="/category"><i class="fa-solid fa-tag"></i>Catégories</a></li>
+              <li class="navigation-subitem"><a class="navigation-sublink" href="/categories"><i class="fa-solid fa-tag"></i>Catégories</a></li>
               <li class="navigation-subitem"><a class="navigation-sublink" href="/newrecipe"><i class="fa-solid fa-circle-plus"></i>Nouvelle recette</a></li>
               <li class="navigation-subitem"><a class="navigation-sublink" href="/favorites"><i class="fa-solid fa-heart"></i>Favoris</a></li>
             </ul>
@@ -85,16 +85,21 @@
             <a class="navigation-social-icon" href="https://codepen.io/leag76"><i class="fa-brands fa-codepen"></i></a>
           </li>
         </ul>
+        <div class="navigation-right">
+          <form id="navigationForm" method="POST" action="/search" class="navigation-form">
+            <input type="search" class="navigation-search-data" name="searchData" placeholder="Recherche ..." required>
+            <button type="submit" class="fas fa-search"></button>
+          </form>
+          <a class="navigation-login" href="/login">
+            <span class="fas fa-user"></span>
+          </a>
+        </div>
         <div id="navigationSearch" class="navigation-search-icon">
           <span class="fas fa-search"></span>
         </div>
         <div id="navigationCancel" class="navigation-cancel-icon">
           <span class="fas fa-times"></span>
         </div>
-        <form id="navigationForm" method="POST" action="/search" class="navigation-form">
-          <input type="search" class="navigation-search-data" name="searchData" placeholder="Recherche ..." required>
-          <button type="submit" class="fas fa-search"></button>
-        </form>
       </nav>
     </header>
 
@@ -135,7 +140,7 @@
             <ul class="footer-list">
               <li class="footer-list-item"><a class="footer-list-link" href="/recipes">Toutes les recettes</a></li>
               <li class="footer-list-item"><a class="footer-list-link" href="/latest">Dernières recettes</a></li>
-              <li class="footer-list-item"><a class="footer-list-link" href="/category">Recherche par catégories</a></li>
+              <li class="footer-list-item"><a class="footer-list-link" href="/categories">Recherche par catégories</a></li>
               <li class="footer-list-item"><a class="footer-list-link" href="/favorites">Mes favoris</a></li>
             </ul>
           </div>
