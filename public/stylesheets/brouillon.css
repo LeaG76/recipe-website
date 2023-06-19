@@ -47,12 +47,6 @@
     left: 35%;
 }
 
-.main-container {
-    position: relative;
-    z-index: 2;
-    min-height: calc(100vh - 76px);
-}
-
 /* Titles */
 
 .title-container {
