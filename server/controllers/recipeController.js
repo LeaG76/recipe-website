@@ -5,11 +5,35 @@
  * GET /
  * Homepage
  */
-exports.homepage = async(req, res) => {
+exports.homePage = async(req, res) => {
     try {
         const limitNumber = 5;
         //const categories = await Category.find({}).limit(limitNumber);
         res.render('index', {title: "JurassicCook - Accueil", currentPage: "home"});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/**
+ * GET /about
+ * About
+ */
+exports.aboutPage = async(req, res) => {
+    try {
+        res.render('about', {title: "JurassicCook - À propos", currentPage: "about"});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/**
+ * GET /recipes
+ * Recipes
+ */
+exports.exploreRecipes = async(req, res) => {
+    try {
+        res.render('recipes', {title: "JurassicCook - Recettes", currentPage: "recipes"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
