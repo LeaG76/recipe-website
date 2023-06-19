@@ -15,6 +15,18 @@ exports.homepage = async(req, res) => {
     }
 }
 
+/**
+ * GET /categories
+ * Categories
+ */
+exports.exploreCategories = async(req, res) => {
+    try {
+        res.render('categories', {title: "JurassicCook - Catégories", currentPage: "recipes"});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
 /*async function insertCategoryData() {
     try {
         await Category.insertMany([
