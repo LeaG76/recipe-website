@@ -85,12 +85,12 @@ header {
 .navigation-link {
     font-size: 18px;
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-gray);
     white-space: nowrap;
 }
 
 .navigation-item:hover .navigation-link {
-    color: var(--color-red);
+    color: var(--color-black);
 }
 
 .navigation-arrow {
@@ -140,6 +140,9 @@ header {
 }
 
 .navigation-sublink i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     width: 25px;
 }
@@ -149,6 +152,7 @@ header {
 }
 
 .active {
+    color: var(--color-black);
     font-weight: 700;
 }
 
