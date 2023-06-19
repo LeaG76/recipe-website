@@ -89,7 +89,7 @@
 **Front**
 
 - EJS files
-- Framework Boostrap
+- CSS3
 - Fontawesome
 
 ## Todo list
@@ -102,6 +102,7 @@ Ensuite :
 
 Idées :
 
+- Bouton pour revenir en haut de page
 - Ajout message type alert quand on a bien créé/modifié une recette/catégorie
 - Message type modal si on veut supprimer une recette ?
 - Alerte en bas/en haut lorsqu'on a bien supoprimé une recette ?
