@@ -1,0 +1,23 @@
+/* Picture from the home page */
+
+.picture-homepage {
+    position: absolute;
+    min-height: calc(100vh - 76px);
+    width: 100%;
+}
+
+.picture-homepage img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 56%;
+    z-index: 4;
+}
+
+/* Main container */
+
+.main-container {
+    position: absolute;
+    min-height: calc(100vh - 76px);
+    z-index: 2;
+}

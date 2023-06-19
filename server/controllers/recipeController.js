@@ -9,7 +9,7 @@ exports.homepage = async(req, res) => {
     try {
         const limitNumber = 5;
         //const categories = await Category.find({}).limit(limitNumber);
-        res.render('index', {title: "Recipe Website - Homepage", currentPage: "home"});
+        res.render('index', {title: "JurassicCook - Accueil", currentPage: "home"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
