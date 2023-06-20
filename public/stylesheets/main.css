@@ -303,6 +303,7 @@ footer {
 } 
 
 .footer-logo img {
+    height: 130px;
     margin-right: 2em;
 }
 

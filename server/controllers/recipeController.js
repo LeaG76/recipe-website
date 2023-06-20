@@ -9,7 +9,7 @@ exports.homePage = async(req, res) => {
     try {
         const limitNumber = 5;
         //const categories = await Category.find({}).limit(limitNumber);
-        res.render('index', {title: "JurassicCook - Accueil", currentPage: "home"});
+        res.render('index', {title: "PaléoDélices - Accueil", currentPage: "home"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -21,7 +21,7 @@ exports.homePage = async(req, res) => {
  */
 exports.aboutPage = async(req, res) => {
     try {
-        res.render('about', {title: "JurassicCook - À propos", currentPage: "about"});
+        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -33,7 +33,7 @@ exports.aboutPage = async(req, res) => {
  */
 exports.exploreRecipes = async(req, res) => {
     try {
-        res.render('recipes', {title: "JurassicCook - Recettes", currentPage: "recipes"});
+        res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -45,7 +45,7 @@ exports.exploreRecipes = async(req, res) => {
  */
 exports.exploreCategories = async(req, res) => {
     try {
-        res.render('categories', {title: "JurassicCook - Catégories", currentPage: "recipes"});
+        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
