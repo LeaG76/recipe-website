@@ -96,6 +96,8 @@
 
 Ensuite :
 - Do the homepage
+- Slider catégories
+- Slider dernières recettes : https://youtu.be/li-ylRo7VEc
 - Page catégories
 - Page recettes
 - Log in et gestion des affichages en fonction utilisateurs
