@@ -119,6 +119,7 @@
 }
 
 .category-card {
+    width: 350px!important;
     background-color: #FFF;
     border-radius: var(--border-radius-1);
 }
