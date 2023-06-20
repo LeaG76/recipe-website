@@ -91,6 +91,7 @@
 - EJS files
 - CSS3
 - Fontawesome
+- Swiper JS v.8.4.4 : create sliders
 
 ## Todo list
 
