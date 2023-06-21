@@ -120,8 +120,6 @@
 
 .category-card {
     width: 350px!important;
-    background-color: #FFF;
-    border-radius: var(--border-radius-1);
 }
 
 .category-card .picture-box {
@@ -137,6 +135,30 @@
 
 .category-card .details-box {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.category-card .details-box .name {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Hover category cards */
+
+.category-card:hover .picture-box {
+    filter: brightness(0.5);
+}
+
+.category-card:hover .details-box {
+    opacity: 1;
 }
 
 /*.category-card .details-box {
