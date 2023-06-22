@@ -1,8 +1,9 @@
-var swiper = new Swiper(".slide-container", {
+/* Slider categories */
+
+var swiperCategories = new Swiper(".category-slide-container", {
   slidesPerView: 4,
   spaceBetween: 25,
   sliderPerGroup: 4,
-  loop: true,
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
@@ -28,5 +29,28 @@ var swiper = new Swiper(".slide-container", {
     1500: {
       slidesPerView: 4,
     }
+  },
+});
+
+/* Slider recipes */
+
+var swiperRecipes = new Swiper(".recipe-slide-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: "true",
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 80,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
