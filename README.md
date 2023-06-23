@@ -95,17 +95,23 @@
 
 ## Todo list
 
-Ensuite :
-- Homepage
-- Slider catégories OK
-- Slider dernières recettes : https://youtu.be/li-ylRo7VEc OK
-- Page à propos
+##### Todos
+
+- Homepage **En cours**
+    - Zone "Pourquoi PaléoDélices ?"
+    - Slider catégories **OK**
+    - Slider dernières recettes : https://youtu.be/li-ylRo7VEc **OK**
+    - Zone "Ajouter des recettes"
+- Page à propos **En cours**
 - Page catégories
 - Page recettes
 - Log in et gestion des affichages en fonction utilisateurs
 
-Idées :
+##### Idées
 
+- Animation en foudu pour afficher les container sur les pages
+    - https://youtu.be/VplDlwLTR50
+- Animation en foudu (différents fondus) pour afficher les images sur la page about
 - Bouton pour revenir en haut de page
 - Ajout message type alert quand on a bien créé/modifié une recette/catégorie
 - Message type modal si on veut supprimer une recette ?
