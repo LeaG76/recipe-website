@@ -3,7 +3,7 @@
 <div class="pinterest-gallery-container">
     <div class="pinterest-gallery-1">
         <% if(aboutpictures != "") { %>
-            <% aboutpictures.slice(0, 12).forEach(function(picture, index) { %>
+            <% aboutpictures.slice(0, 15).forEach(function(picture, index) { %>
                 <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
             <% }); %>
         <% } %>
@@ -17,7 +17,7 @@
 <div class="pinterest-gallery-container">
     <div class="pinterest-gallery-2">
         <% if(aboutpictures != "") { %>
-            <% aboutpictures.slice(12, aboutpictures.length).forEach(function(picture, index) { %>
+            <% aboutpictures.slice(15, aboutpictures.length).forEach(function(picture, index) { %>
                 <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
             <% }); %>
         <% } %>

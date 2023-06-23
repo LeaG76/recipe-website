@@ -20,7 +20,17 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(0deg, var(--color-white), transparent);
-    height: 600px;
+    height: 350px;
+}
+
+.pinterest-gallery-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -820px;
+    background: linear-gradient(180deg, var(--color-white), transparent);
+    height: 350px;
 }
 
 .pinterest-gallery-1 .pinterest-picture,
@@ -40,10 +50,6 @@
 }
 
 .about-container {
-    /* background: linear-gradient(to bottom, transparent, var(--color-white), transparent); */
-    position: relative;
-    background: red;
     margin: 0 3.5em;
-    height: 500px;
-    z-index: 2;
+    height: 400px;
 }
