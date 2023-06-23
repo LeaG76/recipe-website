@@ -96,9 +96,10 @@
 ## Todo list
 
 Ensuite :
-- Do the homepage
+- Homepage
 - Slider catégories OK
 - Slider dernières recettes : https://youtu.be/li-ylRo7VEc OK
+- Page à propos
 - Page catégories
 - Page recettes
 - Log in et gestion des affichages en fonction utilisateurs
