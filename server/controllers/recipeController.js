@@ -1,6 +1,8 @@
 //require('../models/database');
 //const Category = require('../models/Category');
 
+const aboutPictures = require('../../data/about-pictures.json');
+
 /**
  * GET /
  * Homepage
@@ -21,7 +23,9 @@ exports.homePage = async(req, res) => {
  */
 exports.aboutPage = async(req, res) => {
     try {
-        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about"});
+        const json = JSON.parse(JSON.stringify(aboutPictures));
+        const aboutPicturesData = json.map(data => [data.url, data.name]);
+        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about", aboutpictures: aboutPicturesData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }

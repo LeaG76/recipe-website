@@ -1,1 +1,11 @@
 <div class="title-page">À propos</div>
+
+<div class="pinterest-gallery-container">
+    <div class="pinterest-gallery">
+        <% if(aboutpictures != "") { %>
+            <% aboutpictures.forEach(function(picture, index) { %>
+                <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
+            <% }); %>
+        <% } %>
+    </div>
+</div>
