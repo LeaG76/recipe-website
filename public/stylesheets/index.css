@@ -268,8 +268,12 @@
         margin: 0 150px;
     }
 
+    .category-card {
+        width: 300px!important;
+    }
+
     .category-card .picture-box {
-        height: 200px;
+        height: 200px!important;
     }
 
     .recipe-card .picture-box {
@@ -287,6 +291,14 @@
         margin: 0 calc(1em + 30px);
     }
 
+    .category-card {
+        width: 250px!important;
+    }
+
+    .category-card .picture-box {
+        height: 150px!important;
+    }
+
     .category-swiper-navBtn,
     .recipe-swiper-navBtn {
         display: none!important;
@@ -301,5 +313,9 @@
 
     .recipe-slide-container {
         margin: 0 calc(0.5em + 30px);
+    }
+
+    .category-card .picture-box {
+        height: 100px!important;
     }
 }
