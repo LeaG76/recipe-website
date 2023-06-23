@@ -4,7 +4,6 @@
 </p>
 
 <p align="center">
-    <img alt="Boostrap" src="https://img.shields.io/badge/-Bootstrap-8312F5?style=flat&logo=bootstrap&logoColor=white" />
     <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-0068BA?style=flat&logo=css3&logoColor=white" />
     <img alt="EJS" src="https://img.shields.io/badge/-EJS-BF225A?style=flat&logo=ejs&logoColor=white" />
     <img alt="Express" src="https://img.shields.io/badge/-Express-666666?style=flat&logo=express&logoColor=white" />
@@ -90,19 +89,30 @@
 **Front**
 
 - EJS files
-- Framework Boostrap
+- CSS3
 - Fontawesome
+- Swiper JS v.8.4.4 : create sliders
 
 ## Todo list
 
-- Start first with the design mobile version then tablet version then computer version
-- Header + navbar
-- Do the homepage
-- Responsive (header + home page (above all the picture))
-- Footer
-- Create style.css file to fix default value of boostrap and set default colors, size, font, weight, margin, padding, ...
-- Create index css file
-- Le background-color white pour tous c'est peut être ça le problème pour l'image car elle a un fond blanc qui va par dessus le texte p
+##### Todos
+
+- Homepage **En cours**
+    - Zone "Pourquoi PaléoDélices ?"
+    - Slider catégories **OK**
+    - Slider dernières recettes : https://youtu.be/li-ylRo7VEc **OK**
+    - Zone "Ajouter des recettes"
+- Page à propos **En cours**
+- Page catégories
+- Page recettes
+- Log in et gestion des affichages en fonction utilisateurs
+
+##### Idées
+
+- Animation en foudu pour afficher les container sur les pages
+    - https://youtu.be/VplDlwLTR50
+- Animation en foudu (différents fondus) pour afficher les images sur la page about
+- Bouton pour revenir en haut de page
 - Ajout message type alert quand on a bien créé/modifié une recette/catégorie
 - Message type modal si on veut supprimer une recette ?
 - Alerte en bas/en haut lorsqu'on a bien supoprimé une recette ?

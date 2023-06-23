@@ -1,0 +1,321 @@
+/* Picture from the home page */
+
+.picture-homepage {
+    position: absolute;
+    min-height: calc(100vh - 76px);
+    width: 100%;
+}
+
+.picture-homepage img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 56%;
+    z-index: 4;
+}
+
+/* Main container */
+
+.main-container {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 76px);
+    z-index: 2;
+}
+
+.main-container-index {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3em;
+}
+
+.main-container-text {
+    width: 50%;
+    padding: 0 2em;
+}
+
+.main-container-title {
+    margin-bottom: 0.5em;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.main-container-paragraph {
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+.main-container-buttons {
+    display: flex;
+    gap: 0.5em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-container-button {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: var(--border-radius-1);
+}
+
+.main-container-button-primary {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 1px solid transparent;
+}
+
+.main-container-button-primary:hover {
+    background-color: var(--color-black);
+}
+
+.main-container-button-secondary {
+    color: var(--color-gray);
+    background-color: transparent;
+    border: 1px solid var(--color-gray-light);
+}
+
+.main-container-button-secondary:hover {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    border: 1px solid var(--color-gray);
+}
+
+.title-container {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.categories-container {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-container {
+    margin: 0 3.5em!important;
+    width: 100%;
+    padding: 40px 0!important;
+}
+
+.category-slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.category-card {
+    width: 350px!important;
+}
+
+.category-card .picture-box {
+    height: 250px;
+}
+
+.category-card .picture-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-1);
+    object-fit: cover;
+}
+
+.category-card .details-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.category-card .details-box .name {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Hover category cards */
+
+.category-card:hover .picture-box {
+    filter: brightness(0.5);
+}
+
+.category-card:hover .details-box {
+    opacity: 1;
+}
+
+.category-swiper-navBtn {
+    color: var(--color-black)!important;
+    height: 40px!important;
+    width: 40px!important;
+    background: var(--color-gray-light)!important;
+    border-radius: 50%!important;
+    font-weight: 900;
+}
+
+.category-swiper-navBtn::before,
+.category-swiper-navBtn::after {
+    font-size: 18px!important;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+    opacity: 1!important;
+    background-color: var(--color-gray-light)!important;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: var(--color-red)!important;
+}
+
+.recipes-container {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-container {
+    margin: 0 3.5em!important;
+    width: 100%;
+    padding: 40px 0!important;
+}
+
+.recipe-slide-container {
+    margin: 0 250px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.recipe-card {
+    width: 350px!important;
+}
+
+.recipe-card .picture-box {
+    height: 450px;
+}
+
+.recipe-card .picture-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-1);
+    object-fit: cover;
+}
+
+.recipe-card .details-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.recipe-card .details-box .name {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Hover recipe cards */
+
+.recipe-card:hover .picture-box {
+    filter: brightness(0.5);
+}
+
+.recipe-card:hover .details-box {
+    opacity: 1;
+}
+
+.recipe-swiper-navBtn {
+    color: var(--color-black)!important;
+    height: 40px!important;
+    width: 40px!important;
+    background: var(--color-gray-light)!important;
+    border-radius: 50%!important;
+    font-weight: 900;
+}
+
+.recipe-swiper-navBtn::before,
+.recipe-swiper-navBtn::after {
+    font-size: 18px!important;
+}
+
+@media screen and (max-width: 1300px) {
+    .category-container,
+    .recipe-container  {
+        margin: 0 1.5em!important;
+    }
+
+    .recipe-slide-container {
+        margin: 0 150px;
+    }
+
+    .category-card {
+        width: 300px!important;
+    }
+
+    .category-card .picture-box {
+        height: 200px!important;
+    }
+
+    .recipe-card .picture-box {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .category-container,
+    .recipe-container {
+        margin: 0 1em!important;
+    }
+
+    .recipe-slide-container {
+        margin: 0 calc(1em + 30px);
+    }
+
+    .category-card {
+        width: 250px!important;
+    }
+
+    .category-card .picture-box {
+        height: 150px!important;
+    }
+
+    .category-swiper-navBtn,
+    .recipe-swiper-navBtn {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .category-container,
+    .recipe-container {
+        margin: 0 0.5em!important;
+    }
+
+    .recipe-slide-container {
+        margin: 0 calc(0.5em + 30px);
+    }
+
+    .category-card .picture-box {
+        height: 100px!important;
+    }
+}

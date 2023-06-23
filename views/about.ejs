@@ -1,0 +1,25 @@
+<div class="title-page">À propos</div>
+
+<div class="pinterest-gallery-container">
+    <div class="pinterest-gallery-1">
+        <% if(aboutpictures != "") { %>
+            <% aboutpictures.slice(0, 12).forEach(function(picture, index) { %>
+                <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
+            <% }); %>
+        <% } %>
+    </div>
+</div>
+
+<div class="about-container">
+    Blablabla
+</div>
+
+<div class="pinterest-gallery-container">
+    <div class="pinterest-gallery-2">
+        <% if(aboutpictures != "") { %>
+            <% aboutpictures.slice(12, aboutpictures.length).forEach(function(picture, index) { %>
+                <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
+            <% }); %>
+        <% } %>
+    </div>
+</div>

@@ -1,21 +1,61 @@
-require('../models/database');
-const Category = require('../models/Category');
+//require('../models/database');
+//const Category = require('../models/Category');
+
+const aboutPictures = require('../../data/about-pictures.json');
 
 /**
  * GET /
  * Homepage
  */
-exports.homepage = async(req, res) => {
+exports.homePage = async(req, res) => {
     try {
         const limitNumber = 5;
-        const categories = await Category.find({}).limit(limitNumber);
-        res.render('index', {title: "Recipe Website - Homepage", categories});
+        //const categories = await Category.find({}).limit(limitNumber);
+        res.render('index', {title: "PaléoDélices - Accueil", currentPage: "home"});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
 }
 
-async function insertCategoryData() {
+/**
+ * GET /about
+ * About
+ */
+exports.aboutPage = async(req, res) => {
+    try {
+        const json = JSON.parse(JSON.stringify(aboutPictures));
+        const aboutPicturesData = json.map(data => [data.url, data.name]);
+        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about", aboutpictures: aboutPicturesData});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/**
+ * GET /recipes
+ * Recipes
+ */
+exports.exploreRecipes = async(req, res) => {
+    try {
+        res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes"});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/**
+ * GET /categories
+ * Categories
+ */
+exports.exploreCategories = async(req, res) => {
+    try {
+        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes"});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/*async function insertCategoryData() {
     try {
         await Category.insertMany([
             {
@@ -67,6 +107,6 @@ async function insertCategoryData() {
     } catch(error) {
         console.log('err', + error);
     }
-}
+}*/
 
 //insertCategoryData();
