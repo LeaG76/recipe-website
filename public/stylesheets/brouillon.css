@@ -1,5 +1,3 @@
-/* Home page */
-
 .background-container {
     position: absolute;
     z-index: 1;
@@ -45,72 +43,4 @@
 
 .background-container .tomato2 {
     left: 35%;
-}
-
-/* Titles */
-
-.title-container {
-    background-color: var(--color-red)!important;
-    text-align: center ;
-    color: var(--color-white);
-    margin: 0 500px;
-    font-size: 30px;
-    font-weight: 700;
-    border-radius: 0.5rem;
-}
-
-/* Category cards */
-
-.category-link {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    transition: 250ms all;
-}
-
-.category-link:hover {
-    transform: scale(1.1);
-}
-
-.category-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 125px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    border-radius: 0.25rem;
-}
-
-.category-img img {
-    width: 100%;
-    object-fit: cover;
-}
-
-/* Fix Boostrap default parameters */
-
-.form-control, .btn {
-    box-shadow: none !important;
-    border-color: #dee2e6 !important;
-    outline: none !important;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none !important;
-    background: none !important;
-}
-
-/* Remove the autofill background color */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus {
-    transition: background-color 9999s ease-in-out 0s;
-}
-
-/* Taille ordinateur */
-@media screen and (min-width: 1200px) {
-}
-
-/* Taille tablette */
-@media screen and (max-width: 1200px) {
 }
