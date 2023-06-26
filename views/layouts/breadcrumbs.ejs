@@ -1,0 +1,19 @@
+<div class="breadcrumbs-container">
+    <div class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item"><a href="/" class="breadcrumbs-link"><i class="fa-solid fa-house"></i></a></li>
+            <% if(breadcrumbs != "") { %>
+                <% breadcrumbs.forEach(function(item, index) { %>
+                    <li class="breadcrumbs-item"><i class="breadcrumbs-icon fa-solid fa-chevron-right"></i></li>
+                    <li class="breadcrumbs-item"><a 
+                    <% if(index < breadcrumbs.length - 1) { %>
+                        href="/<%- item[1] %>" class="breadcrumbs-link"
+                    <% } else { %>
+                        href="/<%- item[1] %>" class="breadcrumbs-link breadcrumbs-active"
+                    <% } %>
+                    ><%- item[0] %></a></li>
+                <% }); %>
+            <% } %>
+        </ul>
+    </div>
+</div>

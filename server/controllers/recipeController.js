@@ -25,7 +25,10 @@ exports.aboutPage = async(req, res) => {
     try {
         const json = JSON.parse(JSON.stringify(aboutPictures));
         const aboutPicturesData = json.map(data => [data.url, data.name]);
-        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about", aboutpictures: aboutPicturesData});
+        breadcrumbsData = [
+            ["À Propos", "about"]
+        ];
+        res.render('about', {title: "PaléoDélices - À propos", currentPage: "about", breadcrumbs: breadcrumbsData, aboutpictures: aboutPicturesData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -37,7 +40,10 @@ exports.aboutPage = async(req, res) => {
  */
 exports.exploreRecipes = async(req, res) => {
     try {
-        res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes"});
+        breadcrumbsData = [
+            ["Recettes", "recipes"]
+        ];
+        res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes", breadcrumbs: breadcrumbsData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -49,7 +55,11 @@ exports.exploreRecipes = async(req, res) => {
  */
 exports.exploreCategories = async(req, res) => {
     try {
-        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes"});
+        breadcrumbsData = [
+            ["Recettes", "recipes"],
+            ["Catégories", "categories"]
+        ];
+        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }

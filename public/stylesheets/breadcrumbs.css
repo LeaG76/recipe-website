@@ -1,0 +1,37 @@
+.breadcrumbs-container {
+    margin: 2em 3.5em 0 3.5em;
+}
+
+.breadcrumbs {
+    width: fit-content;
+    padding: 0.5em 1em;
+    background-color: #FFF;
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--border-radius-2);
+}
+
+.breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.breadcrumbs-item {
+    
+}
+
+.breadcrumbs-link {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 16px;
+}
+
+.breadcrumbs-active {
+    color: var(--color-black)!important;
+}
+
+.breadcrumbs-icon {
+    color: var(--color-black);
+    font-size: 14px;
+    padding: 0 0.5em;
+}
