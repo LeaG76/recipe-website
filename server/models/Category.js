@@ -9,7 +9,15 @@ const categorySchema = new mongoose.Schema({
         type: String,
         required: 'This field is required.'
     },
-    code: {
+    /*code: {
+        type: String,
+        required: 'This field is required.'
+    },
+    tag: {
+        type: String,
+        required: 'This field is required.'
+    },*/
+    description: {
         type: String,
         required: 'This field is required.'
     }
