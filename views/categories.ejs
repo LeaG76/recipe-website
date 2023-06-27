@@ -4,7 +4,22 @@
 
 <div class="body-container">
     <div class="grid-categories">
-        <a href="/categories/toast">
+        <% if(categories != "") { %>
+            <% categories.forEach(function(category, index) { %>
+                <a href="/categories/<%- category.code %>">
+                    <div class="card-category">
+                        <div class="card-picture">
+                            <img src="pictures/categories/<%- category.image %>" alt="<%- category.name %>">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-name"><%- category.name %></div>
+                            <div class="card-description"><%- category.description %></div>
+                        </div>
+                    </div>
+                </a>
+            <% }); %>
+        <% } %>
+        <!--<a href="/categories/toast">
             <div class="card-category">
                 <div class="card-picture">
                     <img src="pictures/categories/toast.jpg" alt="Tartines">
@@ -69,6 +84,6 @@
                     <div class="card-description">Belles tartines !</div>
                 </div>
             </div>
-        </a>
+        </a>-->
     </div>
 </div>

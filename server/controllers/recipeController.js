@@ -72,11 +72,12 @@ exports.exploreLatest = async(req, res) => {
  */
 exports.exploreCategories = async(req, res) => {
     try {
+        const categories = await Category.find({});
         breadcrumbsData = [
             ["Recettes", "recipes"],
             ["Catégories", "categories"]
         ];
-        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
+        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", categories: categories, breadcrumbs: breadcrumbsData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
@@ -89,13 +90,14 @@ exports.exploreCategories = async(req, res) => {
 exports.exploreCategoriesById = async(req, res) => {
     try {
         const categoryId = req.params.id;
-        //const category = await Category.find({'category': categoryId});
+        //const categories = await Category.find({});
+        const category = await Category.find({'code': categoryId});
         breadcrumbsData = [
             ["Recettes", "recipes"],
             ["Catégories", "categories"],
-            [categoryId, "categories/" + categoryId]
+            [category[0]['name'], "categories/" + categoryId]
         ];
-        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
+        res.render('category', {title: "PaléoDélices - "+category[0]['name'], currentPage: "recipes", category: category, breadcrumbs: breadcrumbsData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
