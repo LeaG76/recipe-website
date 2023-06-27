@@ -1,9 +1,8 @@
 /* Slider categories */
 
 var swiperCategories = new Swiper(".category-slide-container", {
-  slidesPerView: 4,
+  slidesPerView: 5,
   spaceBetween: 25,
-  sliderPerGroup: 4,
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
@@ -16,20 +15,17 @@ var swiperCategories = new Swiper(".category-slide-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 1,
-  //   },
-  //   374: {
-  //     slidesPerView: 2,
-  //   },
-  //   1050: {
-  //     slidesPerView: 3,
-  //   },
-  //   1500: {
-  //     slidesPerView: 4,
-  //   }
-  // },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    1050: {
+      slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 4,
+    }
+  },
 });
 
 /* Slider recipes */
