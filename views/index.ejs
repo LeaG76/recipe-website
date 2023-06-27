@@ -37,7 +37,7 @@
         <div class="category-container swiper">
             <div class="category-slide-container">
                 <div class="swiper-wrapper">
-                    <div class="category-card swiper-slide">
+                    <!--<div class="category-card swiper-slide">
                         <div class="picture-box">
                             <a href="/categories/toast"><img src="pictures/categories/toast.jpg" alt="Tartines"></a>
                         </div>
@@ -76,7 +76,19 @@
                         <div class="details-box">
                             <a class="name" href="/categories/fast-food">Fast food</a>
                         </div>
-                    </div>
+                    </div>-->
+                    <% if(categories != "") { %>
+                        <% categories.forEach(function(category, index) { %>
+                            <div class="category-card swiper-slide">
+                                <div class="picture-box">
+                                    <a href="/categories/<%- category.code %>"><img src="pictures/categories/<%- category.image %>" alt="<%- category.name %>"></a>
+                                </div>
+                                <div class="details-box">
+                                    <a class="name" href="/categories/<%- category.code %>"><%- category.name %></a>
+                                </div>
+                            </div>
+                        <% }); %>
+                    <% } %>
                     <div class="category-card swiper-slide">
                         <div class="picture-box">
                             <a href="/categories"><img src="pictures/categories/seemore.png" alt="See more"></a>

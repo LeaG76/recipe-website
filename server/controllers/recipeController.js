@@ -1,5 +1,5 @@
-//require('../models/database');
-//const Category = require('../models/Category');
+require('../models/database');
+const Category = require('../models/Category');
 
 const aboutPictures = require('../../data/about-pictures.json');
 
@@ -10,8 +10,8 @@ const aboutPictures = require('../../data/about-pictures.json');
 exports.homePage = async(req, res) => {
     try {
         const limitNumber = 5;
-        //const categories = await Category.find({}).limit(limitNumber);
-        res.render('index', {title: "PaléoDélices - Accueil", currentPage: "home"});
+        const categories = await Category.find({}).limit(limitNumber);
+        res.render('index', {title: "PaléoDélices - Accueil", currentPage: "home", categories: categories});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
