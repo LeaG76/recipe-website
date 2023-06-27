@@ -6,3 +6,29 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
 }
+
+.body-container {
+    margin: 0 3.5em;
+    background-color: brown;
+}
+
+@media screen and (max-width: 1300px) {
+    .title-page {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .body-container {
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .title-page {
+        font-size: 30px;
+    }
+
+    .body-container {
+        margin: 0 1rem;
+    }
+}
