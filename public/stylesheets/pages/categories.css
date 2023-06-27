@@ -1,0 +1,30 @@
+.grid-categories {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-category {
+    width: 300px;
+    background-color: #FFF;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.card-picture {
+    height: 200px;
+}
+
+.card-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-2) var(--border-radius-2) 0 0;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
