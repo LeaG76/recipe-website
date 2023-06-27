@@ -107,6 +107,7 @@
 - Page catégories **En cours**
 - Page recettes **En cours**
 - Log in et gestion des affichages en fonction utilisateurs
+- Breadcrumbs : au format mobile mettre des ... pour ceux entre l'icon home et la page en cours, OU mettre juste les 2 dernières pages
 
 ##### Idées
 
