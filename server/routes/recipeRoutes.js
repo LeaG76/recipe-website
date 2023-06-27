@@ -10,5 +10,6 @@ router.get('/about', recipeController.aboutPage);
 router.get('/recipes', recipeController.exploreRecipes);
 router.get('/latest', recipeController.exploreLatest);
 router.get('/categories', recipeController.exploreCategories);
+router.get('/categories/:id', recipeController.exploreCategoriesById);
 
 module.exports = router;

@@ -3,8 +3,7 @@
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 3em;
-    gap: 3em;
+    gap: 4em;
 }
 
 .card-category {

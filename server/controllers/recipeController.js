@@ -82,6 +82,26 @@ exports.exploreCategories = async(req, res) => {
     }
 }
 
+/**
+ * GET /categories/:id
+ * Categories by Id
+ */
+exports.exploreCategoriesById = async(req, res) => {
+    try {
+        const categoryId = req.params.id;
+        //const category = await Category.find({'category': categoryId});
+        breadcrumbsData = [
+            ["Recettes", "recipes"],
+            ["Catégories", "categories"],
+            [categoryId, "categories/" + categoryId]
+        ];
+        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+
 /*async function insertCategoryData() {
     try {
         await Category.insertMany([
