@@ -102,9 +102,10 @@
     - Slider catégories **OK**
     - Slider dernières recettes : https://youtu.be/li-ylRo7VEc **OK**
     - Zone "Ajouter des recettes"
+    - Responsive **En cours**
 - Page à propos **En cours**
-- Page catégories
-- Page recettes
+- Page catégories **En cours**
+- Page recettes **En cours**
 - Log in et gestion des affichages en fonction utilisateurs
 
 ##### Idées
