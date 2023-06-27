@@ -1,14 +1,16 @@
-.grid-categories {    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.grid-categories {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3em;
+    gap: 3em;
 }
 
 .card-category {
-    width: 300px;
+    min-width: 250px;
     background-color: #FFF;
-    border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-1);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -20,7 +22,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--border-radius-2) var(--border-radius-2) 0 0;
+    border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
 }
 
 .card-details {
