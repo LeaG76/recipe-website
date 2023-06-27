@@ -60,21 +60,28 @@
             <a
               <% if (currentPage === 'home') { %>
                 class="navigation-link active" href="/"
-                <%} else { %>
+              <%} else { %>
                 class="navigation-link" href="/"
-                <% } %> >
+              <% } %> >
             Accueil</a>
           </li>
           <li class="navigation-item">
             <a
               <% if (currentPage === 'about') { %>
                 class="navigation-link active" href="/about"
-                <%} else { %>
+              <%} else { %>
                 class="navigation-link" href="/about"
-                <% } %> >
+              <% } %> >
             À propos</a>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="/recipes">Recettes</a>
+          <li class="navigation-item">
+            <a
+              <% if (currentPage === 'recipes') { %>
+                class="navigation-link active" href="/recipes"
+              <%} else { %>
+                class="navigation-link" href="/recipes"
+              <% } %> >
+            Recettes</a>
             <i id="recipesToogle" class="fa-solid fa-chevron-down navigation-arrow"></i>
             <ul id="recipesSubMenu" class="navigation-submenu">
               <li class="navigation-subitem"><a class="navigation-sublink" href="/newrecipe"><i class="fa-solid fa-circle-plus"></i>Nouvelle recette</a></li>
