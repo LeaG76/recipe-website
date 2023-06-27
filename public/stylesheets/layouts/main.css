@@ -85,12 +85,12 @@ header {
 .navigation-link {
     font-size: 18px;
     text-decoration: none;
-    color: var(--color-gray);
+    color: var(--color-black);
     white-space: nowrap;
 }
 
 .navigation-item:hover .navigation-link {
-    color: var(--color-black);
+    color: var(--color-red);
 }
 
 .navigation-arrow {
@@ -152,8 +152,8 @@ header {
 }
 
 .active {
-    color: var(--color-black);
-    font-weight: 700;
+    color: var(--color-red);
+    /* font-weight: 700; */
 }
 
 .navigation-right {

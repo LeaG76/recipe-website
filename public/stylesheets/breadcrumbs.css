@@ -16,8 +16,8 @@
     list-style: none;
 }
 
-.breadcrumbs-item {
-    
+.breadcrumbs-item:hover .breadcrumbs-link {
+    color: var(--color-black);
 }
 
 .breadcrumbs-link {

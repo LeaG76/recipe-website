@@ -36,12 +36,29 @@ exports.aboutPage = async(req, res) => {
 
 /**
  * GET /recipes
- * Recipes
+ * All recipes in alphabetical order 
  */
 exports.exploreRecipes = async(req, res) => {
     try {
         breadcrumbsData = [
-            ["Recettes", "recipes"]
+            ["Recettes", "recipes"],
+            ["Toutes les recettes", "recipes"]
+        ];
+        res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes", breadcrumbs: breadcrumbsData});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error occured"});
+    }
+}
+
+/**
+ * GET /latest
+ * All recipes, from the most recent to the oldest
+ */
+exports.exploreLatest = async(req, res) => {
+    try {
+        breadcrumbsData = [
+            ["Recettes", "recipes"],
+            ["Dernières recettes", "latest"]
         ];
         res.render('recipes', {title: "PaléoDélices - Recettes", currentPage: "recipes", breadcrumbs: breadcrumbsData});
     } catch (error) {
