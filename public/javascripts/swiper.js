@@ -39,6 +39,7 @@ var swiperRecipes = new Swiper(".recipe-slide-container", {
   grabCursor: true,
   centeredSlides: "true",
   slidesPerView: "auto",
+  initialSlide: 3,
   coverflowEffect: {
     rotate: 0,
     stretch: 80,
