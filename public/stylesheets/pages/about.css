@@ -36,11 +36,11 @@
 }
 
 .about-container {
-    min-height: 800px;
+    min-height: 600px;
     width: 100%;
     position: absolute;
-    top: 60vh;
-    background: linear-gradient(180deg, transparent 0%, var(--color-white) 25%, var(--color-white) 75%, transparent 100%);
+    top: 70vh;
+    background: linear-gradient(180deg, transparent 0%, var(--color-white) 15%, var(--color-white) 85%, transparent 100%);
     display: flex;
     justify-content: center;
     align-items: center;
