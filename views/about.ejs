@@ -3,9 +3,10 @@
 <div class="title-page">À propos</div>
 
 <div class="pinterest-gallery-container">
-    <div class="pinterest-gallery-1">
+    <div class="pinterest-gallery">
         <% if(aboutpictures != "") { %>
-            <% aboutpictures.slice(0, 15).forEach(function(picture, index) { %>
+            <% var randomPictures = aboutpictures.slice().sort(function() { return 0.5 - Math.random(); }); %>
+            <% randomPictures.forEach(function(picture, index) { %>
                 <div class="pinterest-picture"><img src="<%- picture[0] %>" alt="<%- picture[1] %>"></div>
             <% }); %>
         <% } %>
@@ -16,7 +17,7 @@
     Blablabla
 </div>
 
-<div class="pinterest-gallery-container">
+<!--<div class="pinterest-gallery-container">
     <div class="pinterest-gallery-2">
         <% if(aboutpictures != "") { %>
             <% aboutpictures.slice(15, aboutpictures.length).forEach(function(picture, index) { %>
@@ -24,4 +25,4 @@
             <% }); %>
         <% } %>
     </div>
-</div>
+</div>-->
