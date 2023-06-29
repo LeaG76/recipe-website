@@ -95,7 +95,7 @@ exports.exploreCategoriesById = async(req, res) => {
             ["Catégories", "categories"],
             [categoryId, "categories/" + categoryId]
         ];
-        res.render('categories', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
+        res.render('category', {title: "PaléoDélices - Catégories", currentPage: "recipes", breadcrumbs: breadcrumbsData});
     } catch (error) {
         res.status(500).send({message: error.message || "Error occured"});
     }
