@@ -1,5 +1,6 @@
 require('../models/database');
 const Category = require('../models/Category');
+const Recipe = require('../models/Recipe');
 
 const aboutPictures = require('../../data/about-pictures.json');
 
