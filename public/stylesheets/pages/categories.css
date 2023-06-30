@@ -1,9 +1,18 @@
-.grid-categories {
+.grid-categories,
+.grid-recipes {
     margin-left: auto;
     margin-right: auto;
     display: grid;
+}
+
+.grid-categories {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4em;
+}
+
+.grid-recipes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3em;
 }
 
 .card-category {
