@@ -103,6 +103,7 @@
     - Slider dernières recettes : https://youtu.be/li-ylRo7VEc **OK**
     - Zone "Ajouter des recettes"
     - Responsive **En cours**
+    - Icon coeur sur les recettes du slider en fonction si elles sont en favoris ou non
 - Page à propos **En cours**
 - Page catégories **En cours**
 - Page recettes **En cours**
